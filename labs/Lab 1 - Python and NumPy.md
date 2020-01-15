@@ -150,7 +150,11 @@ Repeat exercise A.3 using DataFrames instead.
 
 ```python
 df_a * df_b
+#pd.DataFrame.dot(df_a, df_b)
 ```
+
+a * b multiplies corresponding elements of each array with each other. So both elements in the position (1,1) would be multiplied together. pd.DataFrame.dot(a,b) is matrix multiplication which cannot be done with two 6x4 matrices. It must be done between a 6x4 matrix and a 4x6 matrix. 
+
 
 ## Exercise 11
 Repeat exercise A.7 using a dataframe.
